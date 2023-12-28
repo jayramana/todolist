@@ -1,0 +1,156 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans";
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+.taskicon{
+  font-size: 24px;
+}
+.input {
+  height: 48px;
+  width: 192px;
+  border-radius: 9px;
+  background-color: #f1f3f5;
+  border: 0;
+}
+header{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  gap: 0.6rem;
+}
+.input::placeholder {
+  padding-left: 0.5rem;
+  font-size: medium;
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0px 2px 9px black;
+}
+.add {
+  font-size: 48px;
+  background-color: #adb5bd96;
+  color: white;
+  transition: all 0.4s;
+  border-radius: 9px;
+}
+.add:hover {
+  background-color: black;
+}
+.form-add {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+}
+.tasklst {
+  display: flex;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Content {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+.iconic {
+  display: flex;
+  gap: 0.6rem;
+}
+.active,
+.inactive {
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px 11px 0 0;
+  gap: 1rem;
+  background-color: #adb5bd24;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+
+.act {
+  background-color: #c3fae8;
+  color: #008a45;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.ac {
+  color: #008a45;
+}
+.ina {
+  background-color: #ffc9c9;
+  color: #f03e3e;
+  padding: 0.5rem 0;
+
+  text-align: center;
+}
+.inact,
+.undo {
+  color: #f03e3e;
+  transition: all 0.4s;
+}
+.amb {
+  accent-color: #008a45;
+  height: 25px;
+  width: 25px;
+}
+.inac {
+  height: 25px;
+  width: 25px;
+}
+.delete {
+  height: 20px;
+  width: 20px;
+  transition: all 0.4s;
+}
+.delete:hover,
+.undo:hover {
+  color: #f03e3e;
+  transform: scale(1.2);
+}
+.edit {
+  height: 20px;
+  width: 20px;
+  transition: all 0.4s;
+}
+.edit:hover {
+  transform: scale(1.2);
+}
+.clicks {
+  color: #008a45;
+}
