@@ -33,7 +33,7 @@ function App() {
 
   const handleDelete = (id) => {
     const updatedList = items.filter((item) => item.id !== id);
-    const test = items.filter((item) => item.checked == true)
+    const test = items.filter((item) => item.checked === true)
     console.log(test)
     setItems(updatedList);
 
